@@ -1,0 +1,10 @@
+<ul class="table-body">
+    <% users.forEach((user) => { %>
+        <li>
+            <div class="user-data">
+                <span class="id-column"><%= user.id %></span>
+                <span class="name-column"><%= user.name %></span>
+            </div>
+        </li>
+    <% }) %>
+</ul>
