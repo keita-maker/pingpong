@@ -13,10 +13,10 @@ var errorMessage;
 
 
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'wyoming1945',
-  database: 'progate'
+  host: 'us-cdbr-east-02.cleardb.com',
+  user: 'bceb3653623b82',
+  password: '3855c71d',
+  database: 'heroku_f059415a3952eb3'
 });
 
 const transporter = nodemailer.createTransport({

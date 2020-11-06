@@ -1,0 +1,8 @@
+{
+    "dev": {
+        "driver": "mysql",
+        "user": "bceb3653623b82",
+        "password": "3855c71d",
+        "database": "heroku_f059415a3952eb3"
+    }
+}
