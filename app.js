@@ -36,7 +36,7 @@ app.get('/index', (req, res) => {
   }
 });
 
-app.get('/top', (req, res) => {
+app.get('/', (req, res) => {
   res.render('top.ejs');
 });
 
@@ -91,7 +91,7 @@ app.post('/login', (req, res) => {
     (error, results) => {
       console.log(results);
       if(results == false) {
-        res.redirect('/top');
+        res.redirect('/');
       } else {
         userName = results[0]['name'];
         res.redirect('/index');
