@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
+    <header>
+      <div class="menu">
+        <a href="/login">ログイン</a>
+        <a href="/signup">新規作成</a>
+      </div> 
+    </header>
     <div class="main">
       <div class="main-container">
         <form action="/create" method="post">
@@ -14,7 +20,7 @@
           <input type="text" name="name" class="textbox">
           <input type="submit" value="作成する" class="sendbox">
         </form>
-        <div><%= errorMessage %></div>
+        <div><%= createErrorMessage %></div>
       </div>
     </div>
   

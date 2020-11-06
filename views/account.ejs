@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LIST APP</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <header>
+        <div class="menu">
+          <a href="/">ログアウト</a>
+          <a class="header-name"><%= userName %></a>
+        </div>
+        
+    </header>
+    <div class="main">
+      <div class="main-container">
+        <h1>ユーザー名</h1>
+        <div><%= userName %></div>
+        <h1>メールアドレス</h1>
+        <div><%= userMail %></div>
+        <form action="/delete" method="post">
+            <input type="submit" value="削除" class="sendBox">
+        </form>
+      </div>
+    </div>
+  
+
+    
+  </body>
+</html>
