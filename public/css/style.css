@@ -2,24 +2,23 @@ body {
     margin: 0;
 }
 header {
-    height: 80px;
-    background-color: aqua;
+    height: 60px;
+    background-color: black;
     width: 100%;
-    line-height: 80px;
+    line-height: 60px;
+    
 }
 
 .menu {
     display: flex;
     margin-left: 75%;
-    color: red;
 }
-
 a {
     margin-right: 15px;
     text-decoration: none;
-    color: red;
     font-size: 25px;
     font-weight: bold;
+    color: white;
 }
 
 main{
@@ -56,9 +55,9 @@ main{
 .header-name {
     display: inline;
     margin-right: 15px;
-    color: red;
     font-size: 25px;
     font-weight: bold;
 }
+
 
 
