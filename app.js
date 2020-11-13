@@ -115,7 +115,7 @@ app.post('/create', (req, res) => {
             userData = { userMail: req.body.email, userPass: req.body.pass, userName: req.body.name};
             mailOptions['to'] = userData['userMail'];
             mailOptions['text'] = userData['userName'] + 'さんのアカウントが登録されました。\n下記urlからログインしてください。\n' +
-            'https://mighty-earth-10826.herokuapp.com/index';
+            'https://peaceful-springs-42175.herokuapp.com/index';
             transporter.sendMail(mailOptions, (error, info) => {
               console.log(error);
             });
@@ -128,7 +128,9 @@ app.post('/create', (req, res) => {
         res.redirect('/signup');
       }
     }
+  
   )
+  }
 })
   
 
