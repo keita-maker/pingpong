@@ -94,6 +94,13 @@ app.get('/signup', (req, res) => {
 });
 
 app.post('/create', (req, res) => {
+  if (req.body.pass==''||req.body.name==''||req.body.email==''){
+    createError = '※すべて記入してください。'
+    res.redirect('/signup');
+  }else if (req.body.name.length < 4 || req.body.name.length > 8){
+    createError = '※4文字以上8文字以内の名前にしてください。'
+    res.redirect('/signup');
+  }else{
   connection.query(
     'SELECT * FROM users WHERE mail = ?',
     [req.body.email],
